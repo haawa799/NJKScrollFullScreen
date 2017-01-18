@@ -4,7 +4,7 @@
 //  Copyright (c) 2014 Satoshi Asano. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
 
 @protocol NJKScrollFullscreenDelegate;
 

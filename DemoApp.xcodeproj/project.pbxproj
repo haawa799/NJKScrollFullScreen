@@ -21,9 +21,14 @@
 		26D80F8218757A51000FFB15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D80F6418757A50000FFB15 /* UIKit.framework */; };
 		26D80F8A18757A51000FFB15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26D80F8818757A51000FFB15 /* InfoPlist.strings */; };
 		26D80F8C18757A51000FFB15 /* DemoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D80F8B18757A51000FFB15 /* DemoAppTests.m */; };
-		26D80F9E18778235000FFB15 /* NJKScrollFullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D80F9D18778235000FFB15 /* NJKScrollFullScreen.m */; };
 		26E15D031877BCC900817035 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D021877BCC900817035 /* WebViewController.m */; };
-		26E15D071877CAC500817035 /* UIViewController+NJKFullScreenSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E15D061877CAC500817035 /* UIViewController+NJKFullScreenSupport.m */; };
+		436D5B6D1E2FAF040015DEFE /* NJKScrollFullscreenKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 436D5B6B1E2FAF040015DEFE /* NJKScrollFullscreenKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		436D5B701E2FAF040015DEFE /* NJKScrollFullscreenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436D5B691E2FAF040015DEFE /* NJKScrollFullscreenKit.framework */; };
+		436D5B711E2FAF040015DEFE /* NJKScrollFullscreenKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 436D5B691E2FAF040015DEFE /* NJKScrollFullscreenKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		436D5B7C1E2FAF4D0015DEFE /* NJKScrollFullScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 436D5B781E2FAF4D0015DEFE /* NJKScrollFullScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		436D5B7D1E2FAF4D0015DEFE /* NJKScrollFullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 436D5B791E2FAF4D0015DEFE /* NJKScrollFullScreen.m */; };
+		436D5B7E1E2FAF4D0015DEFE /* UIViewController+NJKFullScreenSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 436D5B7A1E2FAF4D0015DEFE /* UIViewController+NJKFullScreenSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		436D5B7F1E2FAF4D0015DEFE /* UIViewController+NJKFullScreenSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 436D5B7B1E2FAF4D0015DEFE /* UIViewController+NJKFullScreenSupport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +39,28 @@
 			remoteGlobalIDString = 26D80F5C18757A50000FFB15;
 			remoteInfo = DemoApp;
 		};
+		436D5B6E1E2FAF040015DEFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26D80F5518757A50000FFB15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 436D5B681E2FAF040015DEFE;
+			remoteInfo = NJKScrollFullscreenKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		436D5B751E2FAF040015DEFE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				436D5B711E2FAF040015DEFE /* NJKScrollFullscreenKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		26D80F5D18757A50000FFB15 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,12 +82,15 @@
 		26D80F8718757A51000FFB15 /* DemoAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoAppTests-Info.plist"; sourceTree = "<group>"; };
 		26D80F8918757A51000FFB15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		26D80F8B18757A51000FFB15 /* DemoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoAppTests.m; sourceTree = "<group>"; };
-		26D80F9C18778235000FFB15 /* NJKScrollFullScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJKScrollFullScreen.h; path = NJKScrollFullScreen/NJKScrollFullScreen.h; sourceTree = "<group>"; };
-		26D80F9D18778235000FFB15 /* NJKScrollFullScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJKScrollFullScreen.m; path = NJKScrollFullScreen/NJKScrollFullScreen.m; sourceTree = "<group>"; };
 		26E15D011877BCC900817035 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		26E15D021877BCC900817035 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		26E15D051877CAC500817035 /* UIViewController+NJKFullScreenSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+NJKFullScreenSupport.h"; path = "NJKScrollFullScreen/UIViewController+NJKFullScreenSupport.h"; sourceTree = SOURCE_ROOT; };
-		26E15D061877CAC500817035 /* UIViewController+NJKFullScreenSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+NJKFullScreenSupport.m"; path = "NJKScrollFullScreen/UIViewController+NJKFullScreenSupport.m"; sourceTree = SOURCE_ROOT; };
+		436D5B691E2FAF040015DEFE /* NJKScrollFullscreenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NJKScrollFullscreenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		436D5B6B1E2FAF040015DEFE /* NJKScrollFullscreenKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJKScrollFullscreenKit.h; sourceTree = "<group>"; };
+		436D5B6C1E2FAF040015DEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		436D5B781E2FAF4D0015DEFE /* NJKScrollFullScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKScrollFullScreen.h; sourceTree = "<group>"; };
+		436D5B791E2FAF4D0015DEFE /* NJKScrollFullScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKScrollFullScreen.m; sourceTree = "<group>"; };
+		436D5B7A1E2FAF4D0015DEFE /* UIViewController+NJKFullScreenSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NJKFullScreenSupport.h"; sourceTree = "<group>"; };
+		436D5B7B1E2FAF4D0015DEFE /* UIViewController+NJKFullScreenSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NJKFullScreenSupport.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +100,7 @@
 			files = (
 				26D80F6318757A50000FFB15 /* CoreGraphics.framework in Frameworks */,
 				26D80F6518757A50000FFB15 /* UIKit.framework in Frameworks */,
+				436D5B701E2FAF040015DEFE /* NJKScrollFullscreenKit.framework in Frameworks */,
 				26D80F6118757A50000FFB15 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +115,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		436D5B651E2FAF040015DEFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,6 +131,7 @@
 				26D80F9518757B3D000FFB15 /* NJKScrollFullScreen */,
 				26D80F6618757A50000FFB15 /* DemoApp */,
 				26D80F8518757A51000FFB15 /* DemoAppTests */,
+				436D5B6A1E2FAF040015DEFE /* NJKScrollFullscreenKit */,
 				26D80F5F18757A50000FFB15 /* Frameworks */,
 				26D80F5E18757A50000FFB15 /* Products */,
 			);
@@ -104,6 +142,7 @@
 			children = (
 				26D80F5D18757A50000FFB15 /* DemoApp.app */,
 				26D80F7E18757A51000FFB15 /* DemoAppTests.xctest */,
+				436D5B691E2FAF040015DEFE /* NJKScrollFullscreenKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,15 +206,37 @@
 		26D80F9518757B3D000FFB15 /* NJKScrollFullScreen */ = {
 			isa = PBXGroup;
 			children = (
-				26D80F9C18778235000FFB15 /* NJKScrollFullScreen.h */,
-				26D80F9D18778235000FFB15 /* NJKScrollFullScreen.m */,
-				26E15D051877CAC500817035 /* UIViewController+NJKFullScreenSupport.h */,
-				26E15D061877CAC500817035 /* UIViewController+NJKFullScreenSupport.m */,
 			);
 			name = NJKScrollFullScreen;
 			sourceTree = "<group>";
 		};
+		436D5B6A1E2FAF040015DEFE /* NJKScrollFullscreenKit */ = {
+			isa = PBXGroup;
+			children = (
+				436D5B781E2FAF4D0015DEFE /* NJKScrollFullScreen.h */,
+				436D5B791E2FAF4D0015DEFE /* NJKScrollFullScreen.m */,
+				436D5B7A1E2FAF4D0015DEFE /* UIViewController+NJKFullScreenSupport.h */,
+				436D5B7B1E2FAF4D0015DEFE /* UIViewController+NJKFullScreenSupport.m */,
+				436D5B6B1E2FAF040015DEFE /* NJKScrollFullscreenKit.h */,
+				436D5B6C1E2FAF040015DEFE /* Info.plist */,
+			);
+			path = NJKScrollFullscreenKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		436D5B661E2FAF040015DEFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436D5B7C1E2FAF4D0015DEFE /* NJKScrollFullScreen.h in Headers */,
+				436D5B6D1E2FAF040015DEFE /* NJKScrollFullscreenKit.h in Headers */,
+				436D5B7E1E2FAF4D0015DEFE /* UIViewController+NJKFullScreenSupport.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		26D80F5C18757A50000FFB15 /* DemoApp */ = {
@@ -185,10 +246,12 @@
 				26D80F5918757A50000FFB15 /* Sources */,
 				26D80F5A18757A50000FFB15 /* Frameworks */,
 				26D80F5B18757A50000FFB15 /* Resources */,
+				436D5B751E2FAF040015DEFE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				436D5B6F1E2FAF040015DEFE /* PBXTargetDependency */,
 			);
 			name = DemoApp;
 			productName = DemoApp;
@@ -213,17 +276,39 @@
 			productReference = 26D80F7E18757A51000FFB15 /* DemoAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		436D5B681E2FAF040015DEFE /* NJKScrollFullscreenKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 436D5B741E2FAF040015DEFE /* Build configuration list for PBXNativeTarget "NJKScrollFullscreenKit" */;
+			buildPhases = (
+				436D5B641E2FAF040015DEFE /* Sources */,
+				436D5B651E2FAF040015DEFE /* Frameworks */,
+				436D5B661E2FAF040015DEFE /* Headers */,
+				436D5B671E2FAF040015DEFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NJKScrollFullscreenKit;
+			productName = NJKScrollFullscreenKit;
+			productReference = 436D5B691E2FAF040015DEFE /* NJKScrollFullscreenKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		26D80F5518757A50000FFB15 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Satoshi Asano";
 				TargetAttributes = {
 					26D80F7D18757A51000FFB15 = {
 						TestTargetID = 26D80F5C18757A50000FFB15;
+					};
+					436D5B681E2FAF040015DEFE = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -242,6 +327,7 @@
 			targets = (
 				26D80F5C18757A50000FFB15 /* DemoApp */,
 				26D80F7D18757A51000FFB15 /* DemoAppTests */,
+				436D5B681E2FAF040015DEFE /* NJKScrollFullscreenKit */,
 			);
 		};
 /* End PBXProject section */
@@ -265,6 +351,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		436D5B671E2FAF040015DEFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -274,9 +367,7 @@
 			files = (
 				26D80F7718757A50000FFB15 /* ViewController.m in Sources */,
 				26E15D031877BCC900817035 /* WebViewController.m in Sources */,
-				26D80F9E18778235000FFB15 /* NJKScrollFullScreen.m in Sources */,
 				26D80F7118757A50000FFB15 /* AppDelegate.m in Sources */,
-				26E15D071877CAC500817035 /* UIViewController+NJKFullScreenSupport.m in Sources */,
 				26D80F6D18757A50000FFB15 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +380,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		436D5B641E2FAF040015DEFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436D5B7D1E2FAF4D0015DEFE /* NJKScrollFullScreen.m in Sources */,
+				436D5B7F1E2FAF4D0015DEFE /* UIViewController+NJKFullScreenSupport.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -296,6 +396,11 @@
 			isa = PBXTargetDependency;
 			target = 26D80F5C18757A50000FFB15 /* DemoApp */;
 			targetProxy = 26D80F8318757A51000FFB15 /* PBXContainerItemProxy */;
+		};
+		436D5B6F1E2FAF040015DEFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 436D5B681E2FAF040015DEFE /* NJKScrollFullscreenKit */;
+			targetProxy = 436D5B6E1E2FAF040015DEFE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -331,7 +436,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -341,13 +445,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -360,7 +470,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -370,7 +480,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -380,20 +489,25 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -407,7 +521,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoApp/DemoApp-Prefix.pch";
 				INFOPLIST_FILE = "DemoApp/DemoApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ninjinkun.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -421,7 +537,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoApp/DemoApp-Prefix.pch";
 				INFOPLIST_FILE = "DemoApp/DemoApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ninjinkun.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -430,7 +548,6 @@
 		26D80F9318757A51000FFB15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DemoApp.app/DemoApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -444,6 +561,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "DemoAppTests/DemoAppTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ninjinkun.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -453,7 +571,6 @@
 		26D80F9418757A51000FFB15 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DemoApp.app/DemoApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -463,9 +580,76 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoApp/DemoApp-Prefix.pch";
 				INFOPLIST_FILE = "DemoAppTests/DemoAppTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ninjinkun.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		436D5B721E2FAF040015DEFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = NJKScrollFullscreenKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.NJKScrollFullscreenKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		436D5B731E2FAF040015DEFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = NJKScrollFullscreenKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.NJKScrollFullscreenKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -498,6 +682,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		436D5B741E2FAF040015DEFE /* Build configuration list for PBXNativeTarget "NJKScrollFullscreenKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				436D5B721E2FAF040015DEFE /* Debug */,
+				436D5B731E2FAF040015DEFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -4,7 +4,7 @@
 //  Copyright (c) 2014 Satoshi Asano. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 @interface UIViewController (NJKFullScreenSupport)
 

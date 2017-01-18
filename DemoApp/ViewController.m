@@ -5,7 +5,7 @@
 //
 
 #import "ViewController.h"
-#import "UIViewController+NJKFullScreenSupport.h"
+@import NJKScrollFullscreenKit;
 
 @interface ViewController ()
 @property (nonatomic) NSArray *data;
