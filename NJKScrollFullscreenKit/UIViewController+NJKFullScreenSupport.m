@@ -101,7 +101,8 @@
     if (NJK_IS_RUNNING_IOS8) {
         return statuBarFrameSize.height;
     }
-    return UIInterfaceOrientationIsPortrait(self.interfaceOrientation) ? statuBarFrameSize.height : statuBarFrameSize.width;
+    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+    return UIInterfaceOrientationIsPortrait(orientation) ? statuBarFrameSize.height : statuBarFrameSize.width;
 }
 
 #pragma mark -
@@ -196,7 +197,8 @@
         // starting from iOS8, tabBarViewController.view.frame respects interface orientation
         viewHeight = viewSize.height;
     } else {
-        viewHeight = UIInterfaceOrientationIsPortrait(self.interfaceOrientation) ? viewSize.height : viewSize.width;
+        UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+        viewHeight = UIInterfaceOrientationIsPortrait(orientation) ? viewSize.height : viewSize.width;
     }
 
     return viewHeight;
